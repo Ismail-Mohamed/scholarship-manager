@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.views.controllers.StatsController">
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="18.0" prefHeight="646.0" prefWidth="910.0" style="-fx-background-color: #fff; -fx-background-radius: 10;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="216.0" layoutY="7.0" opacity="0.4">
+               <children>
+                  <Label alignment="TOP_CENTER" text="République Algérienne Démocratique et Populaire" textFill="#6c7173">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" prefHeight="25.0" prefWidth="453.0" text="Ministère de l'Enseignement Supérieur et de la Recherche Scientifique" textFill="#696f70" />
+               </children>
+            </VBox>
+            <HBox layoutX="39.0" layoutY="105.0" spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox spacing="15.0">
+                           <children>
+                              <Label prefWidth="115.0" text="les candidats      :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="320" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+                           <children>
+                              <Label prefWidth="115.0" text="labo en contact  :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="102" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="30.0" spacing="15.0">
+                           <children>
+                              <Label prefWidth="115.0" text="les doctorans     : ">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="55" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Line endX="60.0" opacity="0.1" rotate="90.0" strokeWidth="2.0" translateY="30.0" />
+                  <VBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <HBox spacing="3.0">
+                           <children>
+                              <Label prefWidth="80.0" text="Etudients  : ">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="3" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" spacing="3.0">
+                           <children>
+                              <Label prefWidth="80.0" text="Doctora A :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="20" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="30.0" spacing="3.0">
+                           <children>
+                              <Label prefWidth="80.0" text="Doctora B :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="32" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Line endX="60.0" opacity="0.1" rotate="90.0" strokeWidth="2.0" translateY="30.0" />
+                  <VBox layoutX="625.0" layoutY="10.0">
+                     <children>
+                        <HBox spacing="15.0">
+                           <children>
+                              <Label prefWidth="134.0" text="Ancien Etudients    : ">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="115" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" spacing="15.0">
+                           <children>
+                              <Label prefWidth="134.0" text="Anciene Doctora A :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="200" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="30.0" spacing="15.0">
+                           <children>
+                              <Label prefWidth="134.0" text="Anciene Doctora B : ">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="300" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Line endX="60.0" layoutX="228.0" opacity="0.1" rotate="90.0" strokeWidth="2.0" translateY="30.0" />
+                  <VBox layoutX="257.0" layoutY="10.0">
+                     <children>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label prefWidth="90.0" text="toal labo       :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="550" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                           <children>
+                              <Label prefWidth="90.0" text="total region  :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="15" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="30.0" spacing="10.0">
+                           <children>
+                              <Label prefWidth="90.0" text="total pays     :">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label alignment="CENTER_RIGHT" prefWidth="30.0" text="90" textAlignment="RIGHT">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox fx:id="pnItems" layoutX="20.0" layoutY="228.0" prefHeight="347.0" prefWidth="898.0" />
+            <JFXButton graphicTextGap="10.0" layoutX="771.0" layoutY="582.0" prefHeight="50.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #1e8cbf; -fx-background-radius: 5;" text="Print" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PRINT" size="2em" />
+               </graphic>
+            </JFXButton>
+            <Label layoutX="25.0" layoutY="187.0" text="Les Dernier Candidats ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Line endX="827.0" layoutX="60.0" layoutY="107.0" opacity="0.4" strokeWidth="0.6" />
+   </children>
+</AnchorPane>

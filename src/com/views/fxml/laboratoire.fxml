@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="944.0" stylesheets="@../css/jfoenix.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.views.controllers.LaboController">
+   <children>
+    <AnchorPane layoutX="8.0" layoutY="19.0" minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="925.0" style="-fx-background-color: #FFF; -fx-background-radius: 10;">
+         <children>
+            <VBox layoutX="19.0" layoutY="24.0">
+               <children>
+                  <Label opacity="0.5" text="les labo's en contacte ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Label opacity="0.5" prefWidth="115.0" text="Total :">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label opacity="0.5" prefHeight="20.0" prefWidth="71.0" text="5">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="236.0" layoutY="10.0" opacity="0.4">
+               <children>
+                  <Label alignment="TOP_CENTER" text="République Algérienne Démocratique et Populaire" textFill="#6c7173">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" prefHeight="25.0" prefWidth="453.0" text="Ministère de l'Enseignement Supérieur et de la Recherche Scientifique" textFill="#696f70" />
+               </children>
+            </VBox>
+            <VBox layoutX="710.0" layoutY="24.0">
+               <children>
+                  <HBox spacing="30.0">
+                     <children>
+                        <Label opacity="0.5" text="Depatement  : ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label opacity="0.5" text="Mi">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Label opacity="0.5" prefWidth="115.0" text="Faculté              :">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label opacity="0.5" prefHeight="20.0" prefWidth="71.0" text="Sciences ">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Line endX="692.0" opacity="0.2" startX="-100.0" translateX="159.0" translateY="90.0" />
+            <VBox layoutX="236.0" layoutY="126.0" prefHeight="141.0" prefWidth="650.0" spacing="30.0">
+               <children>
+                  <HBox spacing="100.0">
+                     <children>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Nom :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Region :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox spacing="100.0">
+                     <children>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Pays :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Cité :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox spacing="100.0">
+                     <children>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Ville :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Code postale : ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="164.0" spacing="100.0">
+                     <children>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Adresses :  separer ';'">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Tel's : separer ';' ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="253.0" spacing="100.0">
+                     <children>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Email's : separer ';'">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: #f9f9f9;">
+                           <children>
+                              <Label opacity="0.3" prefWidth="170.0" styleClass="jfx-text-field-custom" text="Site internet : (URL)">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField focusColor="#45a27e" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" styleClass="jfx-text-field-custom">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="209.0" layoutY="570.0" maxHeight="50.0" prefHeight="50.0" prefWidth="547.0" spacing="100.0">
+               <children>
+                  <JFXButton graphicTextGap="10.0" prefHeight="50.0" ripplerFill="WHITE" style="-fx-background-color: #bf1e3b; -fx-background-radius: 5;" text="Reset " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HISTORY" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" ripplerFill="WHITE" style="-fx-background-color: #1ebfa2; -fx-background-radius: 5;" text="Add " textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CHECK_SQUARE_ALT" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="10.0" prefHeight="50.0" ripplerFill="WHITE" style="-fx-background-color: #1e8cbf; -fx-background-radius: 5;" text="Print" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PRINT" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <VBox layoutX="30.0" layoutY="175.0" prefHeight="68.0" prefWidth="158.0" translateY="100.0">
+               <children>
+                  <Label opacity="0.4" text="les Infromatons">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label opacity="0.4" text="de l'aboratoire">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

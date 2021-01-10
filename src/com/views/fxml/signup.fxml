@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #f9f9f9f9; -fx-background-radius: 10;" styleClass="jfx-text-field-custom" stylesheets="@../css/jfoenix.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.views.controllers.SignUpController">
+   <children>
+      <Button fx:id="close" layoutX="361.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeProgram" prefHeight="8.0" prefWidth="31.0" styleClass="decoration-button-close" />
+      <VBox layoutX="60.0" layoutY="126.0" spacing="40.0">
+         <children>
+            <JFXTextField fx:id="usernameField" focusColor="#1e8cbf" layoutX="10.0" layoutY="10.0" prefWidth="280.0" promptText="Username" styleClass="jfx-text-field-custom" unFocusColor="#1ebfa2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="emailField" focusColor="#1e8cbf" prefWidth="280.0" promptText="Email" styleClass="jfx-text-field-custom" unFocusColor="#1ebfa2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" focusColor="#1e8cbf" promptText="Password" styleClass="jfx-text-field-custom" unFocusColor="#1ebfa2" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="221.0" layoutY="401.0" onAction="#signUp" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #1ebfa2; -fx-background-radius: 3;" text="Inscrivez vous" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="422.0" onAction="#getLogInPage" opacity="0.3" text="j'ai un compte " />
+      <Line endX="9.0" layoutX="143.0" layoutY="454.0" startX="-100.0" strokeWidth="0.2" />
+      <JFXButton graphicTextGap="10.0" layoutX="60.0" layoutY="348.0" onAction="#checkCondition" text="ACCEPTER LES CONDITIONS D'UTILISATION" textFill="#1e8cbf">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fx:id="checkIcon" fill="#1e8cbf" glyphName="CHECK" size="1.2em" visible="false" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

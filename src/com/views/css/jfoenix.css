@@ -1,0 +1,42 @@
+.jfx-custom-radio-button {
+    -fx-font-size : 16px;
+    -fx-font-weight: bold;
+}
+.radio-button .radio {
+    -fx-background-color: null;
+}
+.radio-button:selected .dot {
+    -fx-background-color: #ffffff;
+    -fx-padding: 8px;
+}
+.jfx-text-field-custom {
+    -fx-font-size : 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+.jfx-text-field-custom:focused{
+    -fx-font-size : 20px;
+    -fx-padding: 0 0 7px 7px;
+    -fx-text-fill:  #1ebfa2;
+}
+.jfx-label-custom {
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;	
+}
+/*
+*	Close button
+*/
+.decoration-button-close{
+    -fx-background-radius: 0;
+    -fx-border-style: null;
+    -fx-background-color: null;
+    -fx-background-image:url("../images/close.png");
+-fx-background-size: 30px 30px;
+    -fx-background-repeat:no-repeat;
+}
+.decoration-button-close:hover{
+    -fx-background-color: null;
+    -fx-background-image:url("../images/close-hover.png");
+-fx-background-size: 30px 30px;
+    -fx-background-repeat:no-repeat;
+}
