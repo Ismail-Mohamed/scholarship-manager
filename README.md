@@ -7,7 +7,7 @@ To Start this project you need to make 'lib' folder in the main directory and do
     1- JavaFX 14
     2- Font Awesome 8.1
     3- JFoenix 9.0.1
-    3- mysql-jdbc-connector 8.0.22
+    4- mysql-jdbc-connector 8.0.22
 
 Project URL on github : https://github.com/Ismail-Mohamed/Scholarship-manager.git
 
