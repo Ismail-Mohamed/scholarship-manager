@@ -15,8 +15,8 @@ Project URL on github : https://github.com/Ismail-Mohamed/Scholarship-manager.gi
 # colors use in this project
 ###############################
 
-    1- green 			:  #1ebfa2
-    2- light-green-1	:  #a5e5d959
+    1-green 			:  #1ebfa2
+    2-light-green-1	    :  #a5e5d959
     3-light-green-2 	:  #a5e5d980
     4-dark-green 		:  #1bab91
     5-blue 			    :  #1e8cbf
@@ -24,5 +24,5 @@ Project URL on github : https://github.com/Ismail-Mohamed/Scholarship-manager.gi
     7-light-pink 		:  #bf1e3b40
     8-gray-light-1      :  #f8f8f8f8
     9-gray-light-2 	    :  #f9f9f9f9
-    10-gray-dark		    :  #eee
+    10-gray-dark		:  #eee
 
