@@ -2,7 +2,7 @@
 
 This project is purely JavaFX - Made by Sahli Ismail, and it's university project supervised by Mr.BOUAAKAZE 
 
-To Start this project you need to make 'lib' folder in the main directory and download in it :
+To Start this project you need to make 'lib' folder in the main directory and download in it the fallowing packages :
 
     1- JavaFX 14
     2- Font Awesome 8.1
