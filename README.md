@@ -1,4 +1,4 @@
-# schoolership-manager with JavaFX Ui
+# scholarship-manager with JavaFX 
 
 This project is purely JavaFX - Made by Sahli Ismail, and it's university project supervised by Mr.BOUAAKAZE 
 
@@ -11,9 +11,10 @@ To Start this project you need to make 'lib' folder in the main directory and do
 
 Project URL on github : https://github.com/Ismail-Mohamed/Scholarship-manager.git
 
--------------------------------------
-# colors use in this project
--------------------------------------
+
+# colors specification
+## colors use in this project
+
 
     1- green 			:  #1ebfa2
     2- light-green-1	:  #a5e5d959
