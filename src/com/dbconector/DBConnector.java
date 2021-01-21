@@ -6,26 +6,28 @@ import java.sql.SQLException;
 
 public class DBConnector {
 
-    private static Connection conn;
+    private Connection conn;
     private static DBConnector dbConn;
 
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "";
-    private static  final String HOSTNAME = "localhost:3306";
-    private static final String DBNAME = "ihmMiniProjet";
-    private static final String URL = "jdbc:mysql://" + HOSTNAME + "/" + DBNAME;
+    private final String USERNAME = "root";
+    private final String PASSWORD = "";
+    private final String HOSTNAME = "localhost:3306";
+    private final String DBNAME = "scholarship";
+    private final String URL = "jdbc:mysql://" + HOSTNAME + "/" + DBNAME;
 
-    private DBConnector()throws ClassNotFoundException,SQLException{
+    private DBConnector() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        conn=DriverManager.getConnection(URL,USERNAME,PASSWORD);
+        conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
-    public Connection getConnection(){
+
+    public Connection getConnection() {
         return conn;
     }
+
     // constructor
-    public static DBConnector getDBConnection()throws ClassNotFoundException,SQLException{
-        if(dbConn==null){
-            dbConn =new DBConnector();
+    public static DBConnector getDBConnection() throws ClassNotFoundException, SQLException {
+        if (dbConn == null) {
+            dbConn = new DBConnector();
         }
         return dbConn;
     }
