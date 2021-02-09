@@ -10,7 +10,7 @@ public class DBConnector {
     private static DBConnector dbConn;
 
     private final String USERNAME = "root";
-    private final String PASSWORD = "";
+    private final String PASSWORD = "12345";
     private final String HOSTNAME = "localhost:3306";
     private final String DBNAME = "scholarship";
     private final String URL = "jdbc:mysql://" + HOSTNAME + "/" + DBNAME;

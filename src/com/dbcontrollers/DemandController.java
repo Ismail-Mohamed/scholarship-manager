@@ -70,7 +70,7 @@ public class DemandController implements IDemand {
 
     @Override
     public int update(Demand demand) throws SQLException, ClassNotFoundException {
-        String sql = "UPDATE demands SET firstName=? ,firstNameAr=?, lastName=?, lastNameAr=?, gender=?, dob=?, dobLocation=?, scholarshipBeginDate=?, scholarshipEndDate=?, address=?, email=?, phoneNumberOne=?, phoneNumberTow=?, scholarshipCountry=?, scholarshipLaboratory=?, domain=?, scholarshipType=?, scholarshipAmount=?, ticketPrice=?, faculty=?, year=?, department=?, acknowledgement=? WHERE id= ?";
+        String sql = "UPDATE demands SET firstName=? ,firstNameAr=?, lastName=?, lastNameAr=?, gender=?, dob=?, dobLocation=?, scholarshipBeginDate=?, scholarshipEndDate=?, address=?, email=?, phoneNumberOne=?, phoneNumberTow=?, scholarshipCountry=?, scholarshipLaboratory=?, domain=?, scholarshipType=?, scholarshipAmount=?, ticketPrice=?, faculty=?, year=?, department=?, acknowledgement=? WHERE id= "+demand.getId()+"";
         Connection conn = DBConnector.getDBConnection().getConnection();
         PreparedStatement stm = conn.prepareStatement(sql);
 
