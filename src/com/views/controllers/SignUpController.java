@@ -1,7 +1,11 @@
 package com.views.controllers;
 
+import com.dbcontrollers.UserController;
+import com.helpers.AlertHelper;
+import com.helpers.Validations;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import com.models.User;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import com.helpers.DragPageH;
 import javafx.application.Platform;
@@ -18,6 +22,7 @@ import com.main.Main;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class SignUpController implements Initializable {
@@ -40,8 +45,26 @@ public class SignUpController implements Initializable {
         System.exit(0);
     }
 
-    public void signUp(ActionEvent actionEvent) {
-        //TODO: sign up logic
+    public void signUp(ActionEvent actionEvent) throws IOException, SQLException, ClassNotFoundException {
+
+        String email = emailField.getText();
+        String password = passwordField.getText();
+        String username = usernameField.getText();
+        if (!email.isEmpty() && !password.isEmpty() && !username.isEmpty()) {
+            User user = new User(username, email, password);
+            int resutl = UserController.create(user);
+            if (resutl > 0) {
+                Stage s = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                Parent loginPage = FXMLLoader.load(getClass().getResource("../fxml/login.fxml"));
+                s.setScene(new Scene(loginPage));
+                Main.stage = s; // send current stage
+                s.show();
+            }
+
+        } else {
+            AlertHelper.makeAlert("Sign UP", "Email & Username & Password Required..!");
+        }
+
     }
 
     public void getLogInPage(ActionEvent actionEvent) throws IOException {

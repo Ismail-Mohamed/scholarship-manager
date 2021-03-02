@@ -1,13 +1,17 @@
 package com.views.controllers;
 
 
+import com.dbconector.LoginCheck;
+import com.dbcontrollers.UserController;
+import com.helpers.AlertHelper;
+import com.helpers.DragPageH;
+import com.helpers.Validations;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import de.jensd.fx.glyphs.GlyphsDude;
+import com.main.Main;
+import com.models.User;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcons;
-import com.helpers.DragPageH;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -17,12 +21,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import com.main.Main;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -35,29 +38,40 @@ public class LoginController implements Initializable {
     public JFXButton rememberCheck;
     public FontAwesomeIcon checkIcon;
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         DragPageH.MakeDraggable(mainAnchorPane);
     }
+//    TODO: fixe logic to login and make skip functionality
 
+    public void getHomePage(ActionEvent actionEvent) {
 
-    public void getHomePage(ActionEvent actionEvent) throws IOException {
         String emailFieldText = emailField.getText();
         String passwordFieldText = passwordField.getText();
 
-        if (emailFieldText.equals("email@email.com") && passwordFieldText.equals("password")) {
-            Stage s = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            Parent homePage = FXMLLoader.load(getClass().getResource("../fxml/homePage.fxml"));
-            s.setScene(new Scene(homePage));
-            Main.stage = s; // send current stage
-            s.setX(200);
-            s.setY(200);
-            s.show();
+        if (!emailFieldText.isEmpty() && !passwordFieldText.isEmpty()) {
+            try {
+                if (LoginCheck.Login(emailFieldText, passwordFieldText)) {
+
+                    Stage s = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+                    Parent homePage = FXMLLoader.load(getClass().getResource("../fxml/homePage.fxml"));
+                    s.setScene(new Scene(homePage));
+                    Main.stage = s; // send current stage
+                    s.setX(200);
+                    s.setY(200);
+                    s.show();
+                }
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            } catch (ClassNotFoundException | IOException e) {
+                e.printStackTrace();
+            }
+
+        } else {
+            AlertHelper.makeAlert("Login", "Username & Password Required..!");
         }
-
     }
-
+    
 
     public void getSignUpPage(ActionEvent actionEvent) throws IOException {
         Stage s = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();

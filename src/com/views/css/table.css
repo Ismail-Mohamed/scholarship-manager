@@ -1,0 +1,51 @@
+/* TODO: fixe table hover color */
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-text-background-color: #ffffff;
+    -fx-background-color: #1ebfa2;
+    -fx-font-size: 11pt;
+    -fx-stroke: transparent;
+    -fx-size: 60;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+}
+
+.table-row-cell {
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+/*.table-row-cell:hover {
+    -fx-background-color: #f8f8f8;
+}*/
+
+
+/*.table-view:row-selection {
+    !*-fx-background-color: #f9f9f9;*!
+    !*-fx-text-fill: #363636;*!
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}*/
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgba(30, 191, 162, 0.3);
+    -fx-text-background-color: #444444;
+    -fx-font-size: 13pt;
+    -fx-cell-size: 40px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0em;
+}

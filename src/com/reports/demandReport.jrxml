@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stats" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="79e96c4b-b2bd-40a3-8ac9-737396ec874d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Mysql-Server-Connector"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="508"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="478"/>
+	<queryString language="SQL">
+		<![CDATA[select *
+from demands
+where demands.id=58]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="beneficiary" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="beneficiary"/>
+		<property name="com.jaspersoft.studio.field.label" value="beneficiary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fullNameAr" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fullNameAr"/>
+		<property name="com.jaspersoft.studio.field.label" value="fullNameAr"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fullNameFr" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fullNameFr"/>
+		<property name="com.jaspersoft.studio.field.label" value="fullNameFr"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="dob"/>
+		<property name="com.jaspersoft.studio.field.label" value="dob"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="gender"/>
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grade" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="grade"/>
+		<property name="com.jaspersoft.studio.field.label" value="grade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="duration" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="duration"/>
+		<property name="com.jaspersoft.studio.field.label" value="duration"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="beginDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="beginDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="beginDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hostCountry" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hostCountry"/>
+		<property name="com.jaspersoft.studio.field.label" value="hostCountry"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hostLaboratory" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hostLaboratory"/>
+		<property name="com.jaspersoft.studio.field.label" value="hostLaboratory"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="domain" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="domain"/>
+		<property name="com.jaspersoft.studio.field.label" value="domain"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scholarshipType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="scholarshipType"/>
+		<property name="com.jaspersoft.studio.field.label" value="scholarshipType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="budget" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="budget"/>
+		<property name="com.jaspersoft.studio.field.label" value="budget"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ticketPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ticketPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="ticketPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="financialYear" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="financialYear"/>
+		<property name="com.jaspersoft.studio.field.label" value="financialYear"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="faculty" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="faculty"/>
+		<property name="com.jaspersoft.studio.field.label" value="faculty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="demands"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="84" y="-9" width="360" height="30" uuid="bfeaafce-7e3a-4272-a39c-492375b79351"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[الجمهورية الجرزائرية الديمقراطية الشعبية]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="21" width="361" height="19" uuid="50b6ff20-821e-411e-b902-9bd400cbb4fe"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[وزارة التعليم العالي والبحث العلمي
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="458" y="-1" width="82" height="81" uuid="883601f5-693c-4cca-9089-dd3b5c15e095"/>
+				<imageExpression><![CDATA["C:\\Users\\Ismail\\Desktop\\Scholarship-manager\\src\\com\\views\\images\\logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement x="376" y="50" width="170" height="20" uuid="6284f977-88c3-4248-b416-b910ddde4d0e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ قسم المنح 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="91" width="336" height="31" uuid="c358459c-80bb-4248-a4aa-9e069d1e6d23"/>
+				<textElement textAlignment="Center">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[طلب تسجيل منحة دراسية ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="10" width="170" height="20" uuid="316526f9-9121-4adb-b037-8d592ebb358c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ جامعة عمار الثليجي بالأغواط]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="30" width="170" height="20" uuid="a511cb86-c7a2-4763-9234-12533a9df092">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ رئاسة الجامعة]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="360" y="0" width="190" height="41" uuid="25996a38-da11-4f8d-9648-1a95447aaebf"/>
+				<textElement textAlignment="Right">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[يشهد السيد رئيس قسم المنح 
+الموقع ادناه ان الطالب(ة) :]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="246" splitType="Stretch">
+			<staticText>
+				<reportElement x="458" y="10" width="90" height="20" uuid="aa7f3e62-ea43-4c10-9049-1b2cfce9e74e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[الإسم واللقب بلعربية :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="36" width="98" height="20" uuid="7b0a83e8-3350-4028-8779-70df6f4f8b5d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[الاسم واللقب بالفرنسية :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="61" width="58" height="20" uuid="5c76a702-a150-45f5-8dd8-1caecb6627d0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[البلد المظيف :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="148" width="80" height="16" uuid="a407b853-0682-4788-9e67-5d784abc87f9"/>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[نشهد بان السيد(ة)  :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="340" y="148" width="110" height="16" uuid="4527245b-2288-45e9-ac97-a5c4c66c550b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fullNameAr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="148" width="142" height="16" uuid="9a6518b0-967d-41d4-a7c4-83251e278674">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[   قام بايداع طلب منحة دراسية باتكلفة  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="148" width="90" height="16" uuid="5165001d-2506-4f8d-ab94-12169315ccd5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{budget}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="510" y="86" width="38" height="20" uuid="6b6e5d52-708b-484c-baee-a17dc0a3cc60">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[شعبة :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="520" y="110" width="28" height="20" uuid="312de82c-c0ed-489c-867f-053240ab3094">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[كلية :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="164" width="58" height="16" uuid="91c7b3cc-1612-4434-b257-6f00212c0f94">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[للسنة الجامعية :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="164" width="99" height="16" uuid="86162908-cc96-4a54-a443-59b3ceefb322">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{financialYear}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="148" width="20" height="16" uuid="b52ed9ec-f7b6-4968-aba2-b38c7fdea243">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[ لمدة ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="10" width="158" height="20" uuid="28739fee-6596-4c4a-baf9-89a6cce0f431">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{fullNameAr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="36" width="150" height="20" uuid="3f9185a9-edf2-49d0-8fde-c1c151b6339b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{fullNameFr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="61" width="190" height="20" uuid="24a33aaf-c60a-4273-aaa6-4b5418249ae7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{hostCountry}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="86" width="110" height="20" uuid="f4e2cf62-9098-4cb1-83b9-684c8890b0c8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{domain}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="110" width="319" height="20" uuid="1a11802e-0b73-4353-a27b-6d0c98b99632">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{faculty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="148" width="30" height="16" uuid="ead45201-2a68-4ee7-b599-6942540843f9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{duration}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="148" width="20" height="16" uuid="9c1b4b35-2268-4984-9de7-dc80bd2d2c70">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[يوما]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="149" splitType="Stretch">
+			<textField>
+				<reportElement x="90" y="0" width="100" height="20" uuid="292094d4-e8b9-4ed8-8e91-4d77f3dcd302"/>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy/MM/dd").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="190" y="0" width="40" height="20" uuid="e86fb7cb-6fbd-4732-a721-39694803a7f5"/>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[حرر في:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="20" width="70" height="20" uuid="6026c38d-d305-4de8-add2-caee17a37fce"/>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[    رئيس القسم :   ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="90" y="30" width="149" height="75" uuid="82772cd1-93e1-475a-b0ad-619398cbfb86"/>
+				<imageExpression><![CDATA["C:\\Users\\Ismail\\Desktop\\Scholarship-manager\\src\\com\\views\\images\\signature sahli isamil.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-19" y="134" width="594" height="15" uuid="ca3c0f3c-7be7-431d-8811-04a3d182ade0"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[لا تمنح الا نسخة واحدة من هاته الشهادة
+]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="1" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

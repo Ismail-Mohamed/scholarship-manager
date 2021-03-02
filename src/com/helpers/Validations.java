@@ -4,8 +4,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 public class Validations {
-    public boolean validateEmpty(TextField field) {
-        if (field.getText().isEmpty()) {
+    // TODO: add validation to all demands fields
+
+    public static boolean validateEmpty(TextField field) {
+        if (field.getText() == null) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Erreur : Case vide");
             alert.setHeaderText(null);
@@ -17,9 +19,8 @@ public class Validations {
         return true;
     }
 
-    public boolean validateNumber(TextField field) {
-        if (field.getText().matches("[0-9]+")) {
-
+    public static boolean validateFloat(TextField field) {
+        if (field.getText().matches("[0-9]+|[0-9]+.[0-9]+")) {
             return true;
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -32,24 +33,9 @@ public class Validations {
         }
     }
 
-    public boolean validatePhone(TextField field) {
-        if (field.getText().matches("^(\\d{10})")) {
 
-            return true;
-        } else {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Erreur : Numéro de téléphone invalide");
-            alert.setHeaderText(null);
-            alert.setContentText("Un numéro de téléphone invalide..!");
-            alert.showAndWait();
-
-            return false;
-        }
-    }
-
-    public boolean validateDate(TextField field) {
-        if (field.getText().matches("\\d{4}-\\d{2}-\\d{2}")) {
-
+    public static boolean validateDate(TextField field) {
+        if (field.getText().matches("\\d{4}-\\d{2}-\\d{2}|\\d{2}-\\d{2}-\\d{4}|\\d{4}/\\d{2}/\\d{2}|\\d{2}/\\d{2}/\\d{4}")) {
             return true;
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -61,4 +47,5 @@ public class Validations {
             return false;
         }
     }
+
 }

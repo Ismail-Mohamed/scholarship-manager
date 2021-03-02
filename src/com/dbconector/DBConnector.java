@@ -16,7 +16,7 @@ public class DBConnector {
     private final String URL = "jdbc:mysql://" + HOSTNAME + "/" + DBNAME;
 
     private DBConnector() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
 

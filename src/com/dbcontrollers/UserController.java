@@ -2,17 +2,15 @@ package com.dbcontrollers;
 
 import com.dbconector.DBConnector;
 
-import com.interfaces.IUser;
 import com.models.User;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-public class UserController implements IUser {
+public class UserController {
 
     //TODO: hash password logic should be required in this controller
-    @Override
-    public int create(User user) throws SQLException, ClassNotFoundException {
+    public static int create(User user) throws SQLException, ClassNotFoundException {
         String SQL = "INSERT INTO users VALUES(?,?,?)";
         Connection conn = DBConnector.getDBConnection().getConnection();
         PreparedStatement stm = conn.prepareStatement(SQL);
@@ -24,8 +22,7 @@ public class UserController implements IUser {
         return stm.executeUpdate();
     }
 
-    @Override
-    public User fetch(String email) throws SQLException, ClassNotFoundException {
+    public static User fetch(String email) throws SQLException, ClassNotFoundException {
         String sql = "SELECT * FROM users WHERE email = ? ";
         Connection conn = DBConnector.getDBConnection().getConnection();
         PreparedStatement stm = conn.prepareStatement(sql);
@@ -37,8 +34,7 @@ public class UserController implements IUser {
         return null;
     }
 
-    @Override
-    public ArrayList<User> fetchAll() throws SQLException, ClassNotFoundException {
+    public static ArrayList<User> fetchAll() throws SQLException, ClassNotFoundException {
         Connection conn = DBConnector.getDBConnection().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery("Select * From users");
@@ -50,8 +46,7 @@ public class UserController implements IUser {
         return userList;
     }
 
-    @Override
-    public int update(User user) throws SQLException, ClassNotFoundException {
+    public static int update(User user) throws SQLException, ClassNotFoundException {
         String sql = "UPDATE users SET username= ? ,email=? ,password= ?  WHERE email= '" + user.getEmail() + "'";
         Connection conn = DBConnector.getDBConnection().getConnection();
         PreparedStatement stm = conn.prepareStatement(sql);
@@ -62,8 +57,7 @@ public class UserController implements IUser {
         return stm.executeUpdate();
     }
 
-    @Override
-    public int delete(String email) throws SQLException, ClassNotFoundException {
+    public static int delete(String email) throws SQLException, ClassNotFoundException {
         String sql = "DELETE FROM users WHERE email = ? ";
         Connection conn = DBConnector.getDBConnection().getConnection();
         PreparedStatement stm = conn.prepareStatement(sql);

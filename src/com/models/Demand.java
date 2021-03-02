@@ -1,96 +1,76 @@
 package com.models;
 
 public class Demand {
-    private int id;
-    private String firstName;
-    private String firstNameAr;
-    private String lastName;
-    private String lastNameAr;
+    private String id;
+    private String beneficiary;
+    private String fullNameAr;
+    private String fullNameFr;
+    private String dob;
     private String gender;
-    private String dob;//date of birth
-    private String dobLocation;
-    private String scholarshipBeginDate;
-    private String scholarshipEndDate;
-    private String address;
-    private String email;
-    private String phoneNumberOne;
-    private String phoneNumberTow;
-    private String scholarshipCountry;
-    private String scholarshipLaboratory;
+    private String grade;
+    private long duration;
+    private String beginDate;
+    private String endDate;
+    private String hostCountry;
+    private String hostLaboratory;
     private String domain;
     private String scholarshipType;
-    private String scholarshipAmount;//TODO: chek typography of this word
+    private String budget;
     private String ticketPrice;
-    private String faculty;//TODO: chek typography of this word
-    private String year;
-    private String department;
-    private boolean acknowledgement;
+    private String financialYear;
+    private String faculty;
 
-    public Demand(int id, String firstName, String firstNameAr, String lastName, String lastNameAr, String gender, String dob, String dobLocation, String scholarshipBeginDate, String scholarshipEndDate, String address, String email, String phoneNumberOne, String phoneNumberTow, String scholarshipCountry, String scholarshipLaboratory, String domain, String scholarshipType, String scholarshipAmount, String ticketPrice, String faculty, String year, String department, boolean acknowledgement) {
+    public Demand(String id, String beneficiary, String fullNameAr, String fullNameFr, String dob, String gender, String grade, long duration, String beginDate, String endDate, String hostCountry, String hostLaboratory, String domain, String scholarshipType, String budget, String ticketPrice, String financialYear, String faculty) {
         this.id = id;
-        this.firstName = firstName;
-        this.firstNameAr = firstNameAr;
-        this.lastName = lastName;
-        this.lastNameAr = lastNameAr;
-        this.gender = gender;
+        this.beneficiary = beneficiary;
+        this.fullNameAr = fullNameAr;
+        this.fullNameFr = fullNameFr;
         this.dob = dob;
-        this.dobLocation = dobLocation;
-        this.scholarshipBeginDate = scholarshipBeginDate;
-        this.scholarshipEndDate = scholarshipEndDate;
-        this.address = address;
-        this.email = email;
-        this.phoneNumberOne = phoneNumberOne;
-        this.phoneNumberTow = phoneNumberTow;
-        this.scholarshipCountry = scholarshipCountry;
-        this.scholarshipLaboratory = scholarshipLaboratory;
+        this.gender = gender;
+        this.grade = grade;
+        this.duration = duration;
+        this.beginDate = beginDate;
+        this.endDate = endDate;
+        this.hostCountry = hostCountry;
+        this.hostLaboratory = hostLaboratory;
         this.domain = domain;
         this.scholarshipType = scholarshipType;
-        this.scholarshipAmount = scholarshipAmount;
+        this.budget = budget;
         this.ticketPrice = ticketPrice;
+        this.financialYear = financialYear;
         this.faculty = faculty;
-        this.year = year;
-        this.department = department;
-        this.acknowledgement = acknowledgement;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getId() {
+        return id;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getFirstNameAr() {
-        return firstNameAr;
+    public String getBeneficiary() {
+        return beneficiary;
     }
 
-    public void setFirstNameAr(String firstNameAr) {
-        this.firstNameAr = firstNameAr;
+    public void setBeneficiary(String beneficiary) {
+        this.beneficiary = beneficiary;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getFullNameAr() {
+        return fullNameAr;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setFullNameAr(String fullNameAr) {
+        this.fullNameAr = fullNameAr;
     }
 
-    public String getLastNameAr() {
-        return lastNameAr;
+    public String getFullNameFr() {
+        return fullNameFr;
     }
 
-    public void setLastNameAr(String lastNameAr) {
-        this.lastNameAr = lastNameAr;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setFullNameFr(String fullNameFr) {
+        this.fullNameFr = fullNameFr;
     }
 
     public String getDob() {
@@ -101,76 +81,60 @@ public class Demand {
         this.dob = dob;
     }
 
-    public String getDobLocation() {
-        return dobLocation;
+    public String getGender() {
+        return gender;
     }
 
-    public void setDobLocation(String dobLocation) {
-        this.dobLocation = dobLocation;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public String getScholarshipBeginDate() {
-        return scholarshipBeginDate;
+    public String getGrade() {
+        return grade;
     }
 
-    public void setScholarshipBeginDate(String scholarshipBeginDate) {
-        this.scholarshipBeginDate = scholarshipBeginDate;
+    public void setGrade(String grade) {
+        this.grade = grade;
     }
 
-    public String getScholarshipEndDate() {
-        return scholarshipEndDate;
+    public long getDuration() {
+        return duration;
     }
 
-    public void setScholarshipEndDate(String scholarshipEndDate) {
-        this.scholarshipEndDate = scholarshipEndDate;
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 
-    public String getAddress() {
-        return address;
+    public String getBeginDate() {
+        return beginDate;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setBeginDate(String beginDate) {
+        this.beginDate = beginDate;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEndDate() {
+        return endDate;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
     }
 
-    public String getPhoneNumberOne() {
-        return phoneNumberOne;
+    public String getHostCountry() {
+        return hostCountry;
     }
 
-    public void setPhoneNumberOne(String phoneNumberOne) {
-        this.phoneNumberOne = phoneNumberOne;
+    public void setHostCountry(String hostCountry) {
+        this.hostCountry = hostCountry;
     }
 
-    public String getPhoneNumberTow() {
-        return phoneNumberTow;
+    public String getHostLaboratory() {
+        return hostLaboratory;
     }
 
-    public void setPhoneNumberTow(String phoneNumberTow) {
-        this.phoneNumberTow = phoneNumberTow;
-    }
-
-    public String getScholarshipCountry() {
-        return scholarshipCountry;
-    }
-
-    public void setScholarshipCountry(String scholarshipCountry) {
-        this.scholarshipCountry = scholarshipCountry;
-    }
-
-    public String getScholarshipLaboratory() {
-        return scholarshipLaboratory;
-    }
-
-    public void setScholarshipLaboratory(String scholarshipLaboratory) {
-        this.scholarshipLaboratory = scholarshipLaboratory;
+    public void setHostLaboratory(String hostLaboratory) {
+        this.hostLaboratory = hostLaboratory;
     }
 
     public String getDomain() {
@@ -189,12 +153,12 @@ public class Demand {
         this.scholarshipType = scholarshipType;
     }
 
-    public String getScholarshipAmount() {
-        return scholarshipAmount;
+    public String getBudget() {
+        return budget;
     }
 
-    public void setScholarshipAmount(String scholarshipAmount) {
-        this.scholarshipAmount = scholarshipAmount;
+    public void setBudget(String budget) {
+        this.budget = budget;
     }
 
     public String getTicketPrice() {
@@ -205,6 +169,14 @@ public class Demand {
         this.ticketPrice = ticketPrice;
     }
 
+    public String getFinancialYear() {
+        return financialYear;
+    }
+
+    public void setFinancialYear(String financialYear) {
+        this.financialYear = financialYear;
+    }
+
     public String getFaculty() {
         return faculty;
     }
@@ -212,37 +184,4 @@ public class Demand {
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
-
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public boolean isAcknowledgement() {
-        return acknowledgement;
-    }
-
-    public void setAcknowledgement(boolean acknowledgement) {
-        this.acknowledgement = acknowledgement;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
 }

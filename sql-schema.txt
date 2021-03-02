@@ -1,0 +1,37 @@
+create table demands(
+    id int auto_increment,
+    beneficiary varchar(30),
+    fullNameAr varchar(50),
+    fullNameFr varchar(50),
+    dob date,
+    gender varchar(1),
+    Grade varchar(10),
+    beginDate date,
+    endDate date,
+    duration int(3),
+    hostCountry varchar(50),
+    hostLaboratory varchar(50),
+    domain varchar(15),
+    scholarshipType varchar(20),
+    budget decimal(10,2),
+    ticketPrice decimal(9,2),
+    financialYear varchar(9),
+    Faculty varchar(50),
+    primary key (id)
+);
+
+    beneficiary = [Professeur,Employé,Étudiant]
+    gender = [F,M]
+    Grade = {
+        Professeur  : [PROF,MCA,MCB,MAA,MAB,MC HU A,MC HU B,MA HU]
+        Employé     : [EXECECUTION,MAITRISE,APPLICATION]
+        EXECECUTION : [ETUD DLMD ETUD MASTER]
+    }
+    duration = end-date - begin-date
+    host-country = [,Afrique du Sud,Etats-Unis d'Amérique,Maroc,Allemagne,Finlande,Oman,Arabie Saoudite,France,Portugal,Bahreïn,Hollande,atar,Belgique,Hongrie,Royaume-Uni,Brésil,Ile Maurice,Russie,Canada,Italie,Stockholm,Chili,Jordanie,Suisse,Chine,Koweït,Tchèque,gypte,Liban,Tunisie,Emirate Arabs Unis,Malaisie,Turquie,Espagne,Malaysia]
+    domain =[S.T,A.U.M.V,M.I,S.M,S.N.V,S.E.C.G,D.S.P,L L A,L L E,S.S.H,STAPS,SC.MEDICALES]
+    scholarshipType=[ (duration) < 7 : Longue ? Court ]
+    faculties=[DROIT ET SCIENCES POLITIQUES, GENIE CIVIL ET D'ARCHITECTURE,INSTITUT STAPS,LETTERS ET DES LANGUES ,MEDECINE,SCIENCES,SCIENCES ECONOMQUE COMMERCIALES ET SCIENCES DE GESTIONS,SCIENCES HUMAINES ISLAMIQUE ET CIVILISATION,TECHNOLOGIE]
+    
+
+
