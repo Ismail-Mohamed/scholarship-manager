@@ -12,7 +12,7 @@ To Start this project you need to make 'lib' folder in the main directory and do
 Project URL on github : https://github.com/Ismail-Mohamed/Scholarship-manager.git
 
 # Image :
-![alt text](https://github.com/Ismail-Mohamed/Scholarship-manager/blob/master/Capture-2.jpg?raw=true)
+![alt text](https://github.com/Ismail-Mohamed/Scholarship-manager/blob/master/Capture-2.png?raw=true)
 
 # colors specification
 #### colors use in this project :
