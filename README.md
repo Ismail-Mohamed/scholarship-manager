@@ -1,4 +1,4 @@
-# scholarship-manager with JavaFX 
+# Scholarship Manager With JavaFX 
 
 This project is purely JavaFX - Made by Sahli Ismail, and it's university project supervised by Mr.BOUAAKAZE 
 
